@@ -1,0 +1,39 @@
+.fondo{
+    background-color: #510B52;
+}
+.supercard{
+    border: 23px solid black;
+    padding: 25px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.bttn{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.imgcard{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+    border-radius: 50px;
+    height:20rem;
+    width:40rem;
+}
+
+.Bttn{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: wheat;
+}
+
+.navFix{
+    min-width: 100%;
+    size: cover;
+    margin-right: 0px;
+}

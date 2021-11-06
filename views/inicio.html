@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/marvel-vs-dc-1.jpg">
+    <title>Superhero-pedia</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-light navFix" style="background:#0D96DF;">
+        <a <h6  href="/" width="15%" >Superhero-pedia </h6> </a>
+        <form class="form-inline" action="/" method="post">
+          <input class="form-control mr-sm-2" type="text" placeholder="Superhero registered" aria-label="Search" id="superSearch" name="superSearch">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Superhero list</button>
+        </form>
+      </nav>
+    
+    <div class="card mb-3" style="background: #E20F05;" style="max-width: 540px;">
+      <div class="bttns">
+        <form action="/prev" method="post">
+          <button class="Bttn" type="submit"> < </button>
+        </form>
+        <form action="/next" method="post">
+          <button class="Bttn" type="submit"> > </button>
+        </form>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-8">
+          <div class="card-body" >
+            <h5 class="card-title"><%="#"+ superID + " " + superName %> </h5>
+            <div class="col-md-4">
+              <img src="<%= superImage %>" class="card-img imgcard"  alt="Card image cap">
+            </div>
+              <h5 class="card-title">FullName: <%= superFullname %></h5>
+              <h5 class="card-title">Powerstats: </h5>
+              <p class="card-text">intelligence: <%=superintelligence %></p>
+              <p class="card-text">Strength: <%=superStrength %></p>
+              <p class="card-text">Speed: <%=superSpeed %></p>
+              <p class="card-text">Durability: <%=superDurability %></p>
+              <p class="card-text">Power: <%=superPower %></p>
+              <p class="card-text">Combat: <%=superCombat %></p>
+
+              </div>
+            <div class="card-body"> 
+              <p class="card-text">Place of birth: <%=superPlace %></p>
+              <p class="card-text">Small biography: <%=superBiography %></p>
+              <p class="card-text">Aliases: <%=superAliases %></p>
+              <p class="card-text">Gender: <%=superGender %></p>
+              <p class="card-text">Race: <%=superRace %></p>
+              <p class="card-text">Weight: <%=superHeight %></p>
+              <p class="card-text">Height: <%= superWeight %></p>
+              <p class="card-text">Eye-color: <%=superEye %></p>
+              <p class="card-text">Hair-color: <%=superHair %></p>
+              <p class="card-text">Group: <%= superGroup %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
