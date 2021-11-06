@@ -1,0 +1,16 @@
+{
+  "name": "pedia",
+  "version": "1.0.0",
+  "description": "Parcial 3",
+  "main": "sup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
